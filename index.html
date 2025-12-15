@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+        <div id="doboz">
+            <h1>Keresés</h1>
+            <span>Szélesség:</span>
+            <input type="text" id="szel" value="47.53333">
+            <br>
+            <span>Hosszúság:</span>
+            <input type="text" id="hossz" value="21.63333">
+            <br>
+            <button onclick="keres()">Keresés</button>
+             
+        </div>
+
+        <div id="terkep"></div>
+
+        <h1>Óránkénti időjárás előrejelzés</h1>
+    	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>    
+
+        <h1>Maximum hőmérsékletek előrejelzése</h1>
+        <div id="napiMax"></div>
+
+        <h1>Minimum hőmérsékletek előrejelzése</h1>
+        <div id="napiMin"></div>
+
+    <script src='https://cdn.plot.ly/plotly-3.3.0.min.js'></script>
+    <script src="alap.js"></script>
+</body>
+</html>
